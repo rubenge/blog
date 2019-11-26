@@ -1,8 +1,14 @@
-<h1> Hola mundo </h1>
-<h2> Esto es la home </h2>
-<ul>
-    <li><a href="/cv">Cv</a></li>
-    <li><a href="/portafolio">Portafolio</a></li>
-    <li><a href="">Home</a></li>
-    <li><a href="/contact">Contacto</a></li>
-</ul>
+{% extends 'core/base.html' %}
+
+{% block backgroud %}{% load static %}{% static 'img/home-bg.jpg' %}{% endblock backgroud %}
+
+{% block header %}
+    <h1>Ruben Guzman</h1>
+    <span class="subheading">Ingeniero En Sistemas Computacionales</span>
+{% endblock header %}
+              
+{% block content %}
+<p>
+    Estas en Casa
+</p>
+{% endblock content %}
